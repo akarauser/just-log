@@ -1,0 +1,25 @@
+[project]
+name = "just-log"
+version = "0.1.0"
+description = "Simple logger and log reader"
+readme = "README.md"
+authors = [
+    { name = "akarauser", email = "" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "rich>=15.0.0",
+]
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # Pyflakes
+    "I", # isort
+    "UP", # pyupgrade
+]
+
+ignore = [
+    "E501", # line-too-long
+]
